@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Student Portal</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+       
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    </head>
+<body>
+
+<div class="col-sm-12">
+    &nbsp;
+</div>
+<div class="col-sm-12">
+    &nbsp;
+</div>
+<div class="col d-flex justify-content-center">
+<div class="content">
+    <div class="card border-danger">
+      <div class="card text-center">
+  <div class="card-header text-white" style="background-color: #800000;">
+   <h5> Teacher Timetable 2022</h5>
+  </div>
+  <div class="card-body">
+   
+    <p class="card-text">Access for <b>Teachers Only.</b> Please use your staff number at school as the password</p>
+ 
+     <form name="login">
+        
+        <div class="form-group">
+        
+          <input type="password" class="form-control" id="exampleInputPassword" placeholder="Enter Password here" name="pswd">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-outline-danger" onclick="check(this.form)" value="Login">Submit</button>
+     
+      
+</form>
+   
+
+  </div>
+ 
+</div> </div>
+<br>
+ <div class="card border-success">
+      <div class="card text-center">
+  <div class="card-header text-white" style="background-color: #0b6623;">
+   <h5> Class Marksheet 2022</h5>
+  </div>
+  <div class="card-body">
+   
+    <p class="card-text">Acess for <b>teachers only.</b> Please enter your password below. For any clarifications contact ICT Unit.</p>
+ 
+     <form name="login">
+        
+        <div class="form-group">
+     
+      <input type="password" class="form-control" id="paswd" placeholder="Enter Password here" name="paswrd">
+      
+        </div>
+        <br>
+        <button type="submit" class="btn btn-outline-success" onclick="myFunction()" value="Login">Submit</button>
+     
+      
+
+      </form>
+
+  </div>
+ 
+</div> </div>
+<br>
+    <div class="card border-warning">
+    <div class="card text-center">
+  <div class="card-header text-white" style="background-color: #F9A602;">
+   <h5> Student Term Test Marksheet 2022</h5>
+  </div>
+  <div class="card-body">
+   
+    <p class="card-text">Please enter the<b> registration number</b> of the student as <b>password.</b> For any help please contact your class teacher.</p>
+   <form name="studentmark" method="post" action="termtest.php">
+    <div class="from-group">
+   
+        
+        <input type="password" class="form-control" id="password" name="password" placeholder="Enter Reistration No. here">
+    </div>
+        <br>
+        <button type="submit" class="btn btn-outline-warning" onclick="termtest.php" value="search">Submit</button>
+   
+    </form>
+
+  </div>
+ 
+</div>
+   
+ </div>   
+<br>
+   
+    
+
+   <script>
+ 
+  
+      function myFunction(){
+         
+          var aaa = document.getElementById("paswd");
+          
+        if(aaa.value=="6a2022") {
+       
+       window.open("https://docs.google.com/spreadsheets/d/10SzMm8OiJ8gg1g2g0dzFC0jAO0xWeVAZi1vEwWffVew/edit?usp=sharing")
+      
+         }
+              
+         else if(aaa.value=="6b2022"){
+               window.open("https://docs.google.com/spreadsheets/d/1pxYJWdBNwYSK32pDKrxspDKz6ggFPoYgl3NqXophWsg/edit?usp=sharing")
+              
+          }
+           else if(aaa.value=="6c2022"){
+               window.open('https://docs.google.com/spreadsheets/d/1si0v_2Mo7C0wNkl5lt-Yp-JWKHYzroiNRSmyhr1PUtk/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="6d2022"){
+               window.open('https://docs.google.com/spreadsheets/d/1CsX907rijvqLKu0hpgjkOf5KXR9G6rxm3NOS_75y4-U/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="6e2022"){
+               window.open('https://docs.google.com/spreadsheets/d/12uRR6Kb4lDUkuL2ZU_Z5prag8ghBJjvfyg2JnAZ_jfQ/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="6f2022"){
+               window.open('https://docs.google.com/spreadsheets/d/1wxQB2T-sfRRJe7EwTv-iG71Q_fEjp9j6BPmP877J0x4/edit?usp=sharing')
+              
+          }
+             else if(aaa.value=="7a2022"){
+               window.open('https://docs.google.com/spreadsheets/d/1URvvTTT_6EY9VHSZpqltvPSQ2_yI3TMhiAP1B54SuNQ/edit?usp=sharing')
+              
+          }
+         else if(aaa.value=="7b2022"){
+               window.open('https://docs.google.com/spreadsheets/d/104GhK1L9JynubkZzwlXwx9EqVIOFk57a1jc_jJzodUs/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="7c2022"){
+               window.open('https://docs.google.com/spreadsheets/d/1rZgChCOl1gxY6gvUJcfOf_0xDKjDjl1pWTWqgyKW5xU/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="7d2022"){
+               window.open('https://docs.google.com/spreadsheets/d/1-sZ-Wb_V5N7jIpDwOpPRho0P8XTHHnuIRdF9jiCm69A/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="7e2022"){
+               window.open('https://docs.google.com/spreadsheets/d/10LlYPfPXB6AJlhN0fjV_WAul6qrv4rCFrn72Cn7MXcE/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="7f2022"){
+               window.open('https://docs.google.com/spreadsheets/d/1PcPQmHR2_nMuwlm5fOv_Zcd0C6jKNCDGxX1K7ghNxqI/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="8a2022"){
+               window.open('https://docs.google.com/spreadsheets/d/1ULZiPvcRjwWlxmHnFwh-V-ABWfHFp_SB5A8r-8EMuj0/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="8b2022"){
+               window.open('https://docs.google.com/spreadsheets/d/1KiLjxZWe1xsdwwEzOIW9toj3WSyAd_WYlqV4Y0aWin0/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="8c2022"){
+               window.open('https://docs.google.com/spreadsheets/d/1NDkPu_mEeXUeQxARFwUCG6XQW0oUfNZJmXZbHdVnPk4/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="8d2022"){
+               window.open('https://docs.google.com/spreadsheets/d/1hTnRMg_b3QwexjnwJPGO_xkR9DI_HZw4X8TJNdIAQSQ/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="8e2022"){
+               window.open('https://docs.google.com/spreadsheets/d/1mI-XbKDkYtSg79VpWTZme9GZ8HPkH6mB-vHWSUKelAg/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="8f2022"){
+               window.open('https://docs.google.com/spreadsheets/d/1Q_Y1nU-XMcIk1Vr5veq4T_-_50A_wbWL8ad275AhRI4/edit?usp=sharing')
+              
+          }
+         
+          else if(aaa.value=="12c12022"){
+               window.open('https://docs.google.com/spreadsheets/d/1hUVkwAGWZXTwZLMBKArMUO_ZGH3507IbNz-Fp8LZ_9A/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="12c22022"){
+               window.open('https://docs.google.com/spreadsheets/d/1Rnywwe1zKEl3yyITYOBw4BIRnhTGcTFo9q11Teu0Owo/edit?usp=sharing')
+              
+          } 
+           else if(aaa.value=="12c32022"){
+               window.open('https://docs.google.com/spreadsheets/d/1OFSYuKU68xCYqhvUENQF3NliK4RWVXaAGBcgbys1_cw/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="12c42022"){
+               window.open('https://docs.google.com/spreadsheets/d/1bmwf6isCacXFUiicl_N34QBW1k1qWVSLiuVneoOuKHQ/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="12c52022"){
+               window.open('https://docs.google.com/spreadsheets/d/16Y3pmhpMRlASk2aSBEvjdwj0R0rwubLcYjjGPYp7Hwg/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="13c12022"){
+               window.open('https://docs.google.com/spreadsheets/d/1yqz9J4nO7ojMG1bwYjU6eQKSYPJdKnM8Ssk8-dp1GEU/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13c22022"){
+               window.open('https://docs.google.com/spreadsheets/d/17V3blfszZcaRItxzycq-EduILFmeuDP3B0Y-13Gi1dQ/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13c32022"){
+               window.open('https://docs.google.com/spreadsheets/d/1lvR-v5J_DuFvs3i5tykrdP8BV-lz8hnjJ6epfxSLxF8/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13c42022"){
+               window.open('https://docs.google.com/spreadsheets/d/1OagDJCE6ZkI89zhIeIp_c9xwyXJs7zdIKFyZVwnrUDY/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13c52022"){
+               window.open('https://docs.google.com/spreadsheets/d/1umYfDCHG0zDSVjPxoRJchHy5-8EjuOs0CtyzovjjrwA/edit?usp=sharing')
+              
+          }/*
+           else if(aaa.value=="10e2020"){
+               window.open('https://docs.google.com/spreadsheets/d/1FZ_uYdJOYRiSktHB9kRTO-Gm2QgmfRrtccn0E-KhcmA/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="10f2020"){
+               window.open('https://docs.google.com/spreadsheets/d/1f8QmgGqVxVpVwWSTZlGTpx7JN23R5xUQs-TnBQ4AfT4/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="11a2020"){
+               window.open('https://docs.google.com/spreadsheets/d/1diNhPVakydgD8gi-2D-y4kN-ZzGf-tx_y5_iehjy1GA/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="11b2020"){
+               window.open('https://docs.google.com/spreadsheets/d/1YdTK3UzSyCQ4N_Hy2AA0G3NngzBZOXnjbK-Aln_mtbo/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="11c2020"){
+               window.open('https://docs.google.com/spreadsheets/d/1uNi_W_PBP9uMUZ279cX7KfN6F31rvozxga1UBCngnac/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="11d2020"){
+               window.open('https://docs.google.com/spreadsheets/d/1ian7p1e30knWbfZl3CGRO3It3L0jDzUwd2-PQ7EU6SA/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="11e2020"){
+               window.open('https://docs.google.com/spreadsheets/d/1pm8ZSFbbNcH5MFZSsFbdDrcwwBYYcFywBzVLZrLPXyQ/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="11f2020"){
+               window.open('https://docs.google.com/spreadsheets/d/1MHWJkRH4deqba_YmD8HIilJ8GRZ75VLjiIBDnRFAfvQ/edit?usp=sharing')
+              
+          }
+          
+           else if(aaa.value=="13s2020"){
+               window.open('https://docs.google.com/spreadsheets/d/1wXhWT_tXtbXk8Y6K9Xu8Jm1sNN1h7CRFfoRpoCHB8OI/edit?usp=sharing')
+              
+          }
+          
+           else if(aaa.value=="13c12020"){
+               window.open('https://docs.google.com/spreadsheets/d/1JBY0FSSiovPC7ENPVKJVzNlUZWDklVi4AiSnnQpHDu8/edit?usp=sharing')
+              
+          }
+          
+          else if(aaa.value=="13c22020"){
+               window.open('https://docs.google.com/spreadsheets/d/1tmFKQCDlSkkCi4u6aoCV7SfdASlNQrecQbv91UB4YGc/edit?usp=sharing')
+              
+          }
+          
+          else if(aaa.value=="13c32020"){
+               window.open('https://docs.google.com/spreadsheets/d/1B6tbr758vtbO4qiw3qkFJ0iUO987i4S-3HalfJq9HiE/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13c42020"){
+               window.open('https://docs.google.com/spreadsheets/d/1-bzaO6I5NYuL4zOR-NIwWGVfB0TH40jIgbR8oXRbif8/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="13c52020"){
+               window.open('https://docs.google.com/spreadsheets/d/18ylhtXkSDlhi-TNmJAhFm8QsSUAjKU2pv_QF-OvLXgY/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13t12020"){
+               window.open('https://docs.google.com/spreadsheets/d/1MHWJkRH4deqba_YmD8HIilJ8GRZ75VLjiIBDnRFAfvQ/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="13t22020"){
+               window.open('https://docs.google.com/spreadsheets/d/1MHWJkRH4deqba_YmD8HIilJ8GRZ75VLjiIBDnRFAfvQ/edit?usp=sharing')
+              
+          }
+      
+           else if(aaa.value=="13t32020"){
+               window.open('https://docs.google.com/spreadsheets/d/1Pdb8W4knZbcHZQPDVo9eP0k4Odi14W1HAtKVQD1-rwA/edit?usp=sharing')
+           }
+           
+           else if(aaa.value=="13t42020"){
+               window.open('https://docs.google.com/spreadsheets/d/1dmOTCwTcuqu827E9zpB4AV0kL-LCFIRh5vbUxDpatr4/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13a12020"){
+               window.open('https://docs.google.com/spreadsheets/d/1dshGe-f3WHNzM836ksh-f1nZfFTqoF_WVMrknxkfOq8/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13a22020"){
+               window.open('https://docs.google.com/spreadsheets/d/1uhOMuIMffw7fO7QyyqgcKqZOSoVrtHENITFqx5xCKSg/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="6aonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1AQSBziBBoGtt-gGHocV-P4oNtyB9s1NLeR8W_awayV8/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="6bonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1QVoRRllwH_k3woovJFRhYY00TubiMytMw3keaGlNcYQ/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="6conline"){
+               window.open('https://docs.google.com/spreadsheets/d/1qooR-TFLgxwW_c9YWx0vwuSNKlduyH-awofWKGp3-g8/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="6donline"){
+               window.open('https://docs.google.com/spreadsheets/d/1rCm37NsZ3hxiNC7JeR3jNR-exgUXC7rpnGtP4gMw3tU/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="6eonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1-R4TxB8qV2CJ5h0U8z9TIb9owRStIT_W7JyYbgIMPZU/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="6fonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1Yz7KUY_CiswWH7gxaeNZ544-PS83jip8QwSSpZMSeFY/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="7aonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1-8atahXrFwnTvaguyToCTAsujY3almYLNtsam3nss78/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="7bonline"){
+               window.open('https://docs.google.com/spreadsheets/d/11-wc19uYOWw6nB_NRtRsuf_Cgj_iGv0ecttryGFppLw/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="7conline"){
+               window.open('https://docs.google.com/spreadsheets/d/1FgY2oGaef9ASIENf8a7Qf0z-npQMYtTbIJb8Q782vDg/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="7donline"){
+               window.open('https://docs.google.com/spreadsheets/d/1e6tFYyJ1fyRt2NMidiVl6V0j3g0iOogFGRwLKjNEoNM/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="7eonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1XWV8kVzZIK4mONfFfDoR7Sp9LbpaHH4XyRDBxf2evqI/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="7fonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1nVPq2yGudoejnorGYw4FyDUN16o2YRhU2k66nRJM66o/edit?usp=sharing')
+              
+          }
+          
+           else if(aaa.value=="8aonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1_y2XlZCsEn8g0pM6P9twO6aD-ZUxvEwIz98eOQSNcLQ/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="8bonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1_AV23oPhtXi2CW2urGda2bjKiZbE2W-Om_X8UAqu5Xw/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="8conline"){
+               window.open('https://docs.google.com/spreadsheets/d/13KD98le4ntm6ohbUCiJ6GOWlks-Y9_WsSDYl8pfCBkM/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="8donline"){
+               window.open('https://docs.google.com/spreadsheets/d/1BpGgLzPVf5gTnWQvFrfNUHmZrh9VIa7hdgAKLANFPdk/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="8eonline"){
+               window.open('https://docs.google.com/spreadsheets/d/11KMDX9OBy7CpAFVbymtzpBtAt0pYY7SeKQozLIeRPgI/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="8fonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1Zjbtdav8ztbBJdnN-rrqlEOi_mwYLicuyvg_hku8ZGQ/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="9aonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1fwhyS_8bskzJKmBFGLQRp0hHdvypzVysq_pRIwa21Hk/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="9bonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1XSMjAmoVrsm3fmNQIqJ_b7Gq-rNRqgvZXzlXla-bYWs/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="9conline"){
+               window.open('https://docs.google.com/spreadsheets/d/1TvNggZLzfdh8iYPYEmL0XkrIiPxgZq6Bq0zz6FFBOfQ/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="9donline"){
+               window.open('https://docs.google.com/spreadsheets/d/1_hYkEsQf_nLGNq6HutnkQr_LMKqU10bCVf-3bFrUxAo/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="9eonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1SXlO5fcDOmJ-ciTYDbPa4RhQgn9TReI4EbCKawVmv_o/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="9fonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1L4PBRIpP-Nkw_X27bDp446R_uCmziAsPmtFdPpnIglI/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="10aonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1HiYL4QdaOhNoLMeQEux0mH5JRAzblER7CwC4CXkt-I0/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="10bonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1xwi9w__m_ZkQa_EVHANBOB_z7pyO43BXgautkGF4k48/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="10conline"){
+               window.open('https://docs.google.com/spreadsheets/d/1gYbqFhBZ1M41t8mEzGue9kOM442n-HLNRIfiYL_1Adc/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="10donline"){
+               window.open('https://docs.google.com/spreadsheets/d/1cV_-BteMv-Q_y3OUCsmeyNecx_WcbhwfunHfmryuA7s/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="10eonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1oGbHikbRXTboi35gkOrnUrTF12HnWcohlAQ6JQqxs0o/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="10fonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1oXEZ0C3zYmiIswhGdsEdyUwXv4NTc8Xdy7i-opLMCOI/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="11aonline"){
+               window.open('https://docs.google.com/spreadsheets/d/19YijyWpzmgtEVP6zEfkpmg3lViSPfJQasEcWTFgo93Y/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="11bonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1r9evzYQCiA-Dcz2VSOkvFNpMmB0quR2bY7EOXbdyZG4/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="11conline"){
+               window.open('https://docs.google.com/spreadsheets/d/1ScJCaKdcCmpkKnySpWqIMEL9LhnBbdeQ4XWQPI5ztfQ/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="11donline"){
+               window.open('https://docs.google.com/spreadsheets/d/1Jk-oOy75_wLevetOoeN9m4dC9g6WIF7CN1fWy-U1k5Y/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="11eonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1MeQWy5Az4OdeAcP1qQjWxFfQs0FmDkn4sljTsr2RFcQ/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="11fonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1__l6FPCjOF4Fcv8GAfdqn6DJOagIt1JWRQNE9qnaafs/edit?usp=sharing')
+              
+          }
+            else if(aaa.value=="13sonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1d4N0OH7OA0-kK1NepF_hg0bJtK1GmuEgVjIXMJfA77o/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="12sonline"){
+               window.open('https://docs.google.com/spreadsheets/d/1LDm5mDQHlg9F1h6PGkTVmw4ZTVovbF49Pq0qGng_Ypk/edit?usp=sharing')
+              
+          }
+            else if(aaa.value=="12a1online"){
+               window.open('https://docs.google.com/spreadsheets/d/1OMItufaBUiJUrNjLnp3a4vheHK2sODdjJZfdjwv-i08/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="12a2online"){
+               window.open('https://docs.google.com/spreadsheets/d/1XLKgLjgeeoIg1v1w_q1DxowOg1CpvHGzSfCsVUFZngc/edit?usp=sharing')
+              
+          }
+            else if(aaa.value=="13a1online"){
+               window.open('https://docs.google.com/spreadsheets/d/1rron0YwYVHigmS-AfIrtskAPEDwtljH-0lfVkntgXA0/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13a2online"){
+               window.open('https://docs.google.com/spreadsheets/d/19Vq0QQ-WjzLvUJFaRiHr8DcseRPjta3njo8xQTYOFS0/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13c12022"){
+               window.open('https://docs.google.com/spreadsheets/d/1yqz9J4nO7ojMG1bwYjU6eQKSYPJdKnM8Ssk8-dp1GEU/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="12c1online"){
+               window.open('https://docs.google.com/spreadsheets/d/1yqz9J4nO7ojMG1bwYjU6eQKSYPJdKnM8Ssk8-dp1GEU/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13c2online"){
+               window.open('https://docs.google.com/spreadsheets/d/1-rX29FalRh9q_MSrk81ET8B931tCcngVrsBjdtQ2MTg/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="12c2online"){
+               window.open('https://docs.google.com/spreadsheets/d/11acMWp-5Wh7zUsIbigpCJzsmkz6H_D0hXVbE0KFwfmQ/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13c3online"){
+               window.open('https://docs.google.com/spreadsheets/d/1DxPrR6hCp3Y3tCmJPvnwma5EGlMUEOal7evu49v5DUQ/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="12c3online"){
+               window.open('https://docs.google.com/spreadsheets/d/1if5iP0XThIW2uKkpdcfvV_L6h_X_9wO-_FwFlDWKoZk/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="12c4online"){
+               window.open('https://docs.google.com/spreadsheets/d/1SCYC_O9TLUyzZfSw9uu0_8YhfRjFL502N5fT7_hhFrE/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="12c5online"){
+               window.open('https://docs.google.com/spreadsheets/d/1757xJ2Q17lAdOd5qCehiZclPja8ZyW01OrxETWcIl1I/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="13c4online"){
+               window.open('https://docs.google.com/spreadsheets/d/1N5BTlB5WkSg2h3Js1nh6IwEulGBtFYJG6huhjYn6lmo/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13c5online"){
+               window.open('https://docs.google.com/spreadsheets/d/1UPzdowh2kLGibhfG8nbjgjay_v-vhFIukjXIVk8sKe0/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="12t1online"){
+               window.open('https://docs.google.com/spreadsheets/d/18YqXGiYSy43oso05XmLxB4Ya0AavHR_M193Mu76r0RY/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="12t2online"){
+               window.open('https://docs.google.com/spreadsheets/d/15-eUpyhU2aMKAMfJFoxUkldu8r7uxO5-KSBwPIcD6NU/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="12t3online"){
+               window.open('https://docs.google.com/spreadsheets/d/1tqukABYlqJh9VhFWasJQcNgg9HhgMJyheCgnPUiv0ys/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="12t4online"){
+               window.open('https://docs.google.com/spreadsheets/d/1giMo-q-eQSqg1Sz4xn8AS9JA8smUTM6ulunm0GRX2P8/edit?usp=sharing')
+              
+          }
+              else if(aaa.value=="13t1online"){
+               window.open('https://docs.google.com/spreadsheets/d/1cwP8r-swsE_s3so4XoT_KhtNiUClKo0W1g2UnMLlVlc/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="13t2online"){
+               window.open('https://docs.google.com/spreadsheets/d/1bgp2VDESn4_RI7GZ4y1LYKi3mVbR55ROnzIci5ssOeE/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13t3online"){
+               window.open('https://docs.google.com/spreadsheets/d/1nA0RiP3LpjNUKAAIcY0zI0Cgaqetia9Jpt5GDZCTOGk/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13t4online"){
+               window.open('https://docs.google.com/spreadsheets/d/1bT_8tCZeFV08hO0nWqI05pQRA76kEKWAqFiF6wdzWZw/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="grade13a1"){
+               window.open('https://docs.google.com/spreadsheets/d/1Rj628D8J0OM8WKfcTrAFa8zNPewYy8HUeMdAU2CwqDE/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="grade13a2"){
+               window.open('https://docs.google.com/spreadsheets/d/1ATGbrr7IUEslu0rCNvcOqHJniK4-42YmEpeFDUrwNRE/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="10a2021"){
+               window.open('https://docs.google.com/spreadsheets/d/1ZGae0vW6Z4Q9O7DrEShO9rc-qLwY7szhIvDntdUt99k/edit?usp=sharing')
+              
+          }
+          else if(aaa.value=="10b2021"){
+               window.open('https://docs.google.com/spreadsheets/d/1wvyTYIpNkXW_JgTq-9boskb0g4v8LA5fZUlxwcrpn10/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="10c2021"){
+               window.open('https://docs.google.com/spreadsheets/d/1YTAUTvy-kzHaSJ55ryRr9dGAXDpFBQ5Pl9Eg3gJw9bM/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="10d2021"){
+               window.open('https://docs.google.com/spreadsheets/d/1dx-mI49dRJBodiy-SnhxBw7TTCsSeLMAIbeajMZas6s/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="10e2021"){
+               window.open('https://docs.google.com/spreadsheets/d/1bJ_d9rMSd_FoECNKHRyhzAFrJCoZWmwGyftSj61-MOE/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="10f2021"){
+               window.open('https://docs.google.com/spreadsheets/d/1e7C8d0Ig3Ow2bF97NpUsffB2maY4fZsL-U2lVI_NDvU/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13c12021"){
+               window.open('https://docs.google.com/spreadsheets/d/12Y8bLQi2ktml3CUrUv_mpf9d6GwBzmB9vMrTLFMXz_c/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13c22021"){
+               window.open('https://docs.google.com/spreadsheets/d/14J1LB-HnjWmROErXkrF3lSSHPOF9itn1F2EpII9Ml14/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13c32021"){
+               window.open('https://docs.google.com/spreadsheets/d/1rIULHaVXPJJOi6gHtxczNV7wGhfjtkjmpX5jPd64TP4/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13c42021"){
+               window.open('https://docs.google.com/spreadsheets/d/1rIULHaVXPJJOi6gHtxczNV7wGhfjtkjmpX5jPd64TP4/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13c52021"){
+               window.open('https://docs.google.com/spreadsheets/d/1a8a87PcKNUa7X5RFWYh67prdpjXvJCeEB0hSA8Y-jHI/edit?usp=sharing')
+              
+          } else if(aaa.value=="13c52021"){
+               window.open('https://docs.google.com/spreadsheets/d/1a8a87PcKNUa7X5RFWYh67prdpjXvJCeEB0hSA8Y-jHI/edit?usp=sharing')
+              
+          }
+           
+           else if(aaa.value=="13s2021"){
+               window.open('https://docs.google.com/spreadsheets/d/1f6Mn8EjOgDOgwa-fNe92LcyotHACGlPmvnyvhX6IxkM/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13t12021"){
+               window.open('https://docs.google.com/spreadsheets/d/1cSW021INukbO_p_kHs2VsPVTjyFXTG_boSPLMJtcMow/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13t22021"){
+               window.open('https://docs.google.com/spreadsheets/d/1Tt8inUA6XE54lyWvuWkBSKCRJfXiOfb_ryDj_XTOXjk/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13t32021"){
+               window.open('https://docs.google.com/spreadsheets/d/159_CiKguriZdK43haskyZagwe5WNs-dcHi9lzx9qKUE/edit?usp=sharing')
+              
+          }
+           else if(aaa.value=="13t42021"){
+               window.open('https://docs.google.com/spreadsheets/d/1NyqXAaSEhKntMOyk_Za9YYR7ZLIFn92lH63jbHtiDoo/edit?usp=sharing')
+              
+          }
+          
+           else {
+              alert("Error Password. Try Again or Contact ICT Unit.")*/
+          }
+          </script>
+          
+         
+   <script language="javascript">
+  
+      function check(form){
+      
+        if(form.pswd.value=="005") {
+              window.open('ttimages/5.PNG')
+          }
+          else if(form.pswd.value=="003") {
+              window.open('ttimages/3.PNG')
+          }
+          else if(form.pswd.value=="007"){
+               window.open('ttimages/7.PNG')
+              
+          }
+          else if(form.pswd.value=="008"){
+               window.open('ttimages/8.PNG')
+              
+          }
+          else if(form.pswd.value=="009"){
+               window.open('ttimages/9.PNG')
+              
+          }
+           else if(form.pswd.value=="010"){
+               window.open('ttimages/10.PNG')
+              
+          }
+          else if(form.pswd.value=="014"){
+               window.open('ttimages/14.PNG')
+              
+          }
+           
+          else if(form.pswd.value=="015"){
+               window.open('ttimages/15.PNG')
+              
+          }
+          
+          else if(form.pswd.value=="017"){
+               window.open('ttimages/17.PNG')
+              
+          }
+         
+          else if(form.pswd.value=="019"){
+               window.open('ttimages/19.PNG')
+              
+          }
+          else if(form.pswd.value=="020"){
+               window.open('ttimages/20.PNG')
+              
+          }
+          else if(form.pswd.value=="021"){
+               window.open('ttimages/21.PNG')
+              
+          }
+           
+           else if(form.pswd.value=="023"){
+               window.open('ttimages/23.PNG')
+              
+          }
+           else if(form.pswd.value=="024"){
+               window.open('ttimages/24.PNG')
+              
+          }
+           else if(form.pswd.value=="025"){
+               window.open('ttimages/25.PNG')
+              
+          }
+           else if(form.pswd.value=="026"){
+               window.open('ttimages/26.PNG')
+              
+          }
+           else if(form.pswd.value=="027"){
+               window.open('ttimages/27.PNG')
+              
+          }
+           else if(form.pswd.value=="028"){
+               window.open('ttimages/28.PNG')
+              
+          }
+           else if(form.pswd.value=="029"){
+               window.open('ttimages/24.PNG')
+              
+          }
+          
+           else if(form.pswd.value=="030"){
+               window.open('ttimages/30.PNG')
+              
+          }
+          
+           else if(form.pswd.value=="031"){
+               window.open('ttimages/31.PNG')
+              
+          }
+           else if(form.pswd.value=="032"){
+               window.open('ttimages/32.PNG')
+              
+          }
+          else if(form.pswd.value=="033"){
+               window.open('ttimages/33.PNG')
+              
+          }
+           else if(form.pswd.value=="034"){
+               window.open('ttimages/34.PNG')
+              
+          }
+           else if(form.pswd.value=="035"){
+               window.open('ttimages/35.PNG')
+              
+          }
+           else if(form.pswd.value=="036"){
+               window.open('ttimages/36.PNG')
+              
+          }
+           else if(form.pswd.value=="037"){
+               window.open('ttimages/37.PNG')
+              
+          }
+           else if(form.pswd.value=="038"){
+               window.open('ttimages/38.JPG')
+              
+          }
+           else if(form.pswd.value=="039"){
+               window.open('ttimages/39.PNG')
+              
+          }
+           else if(form.pswd.value=="040"){
+               window.open('ttimages/40.PNG')
+              
+          }
+           else if(form.pswd.value=="041"){
+               window.open('ttimages/41.PNG')
+              
+          }
+           else if(form.pswd.value=="042"){
+               window.open('ttimages/42.PNG')
+              
+          }
+          
+           else if(form.pswd.value=="044"){
+               window.open('ttimages/44.PNG')
+              
+          }
+           
+           else if(form.pswd.value=="048"){
+               window.open('ttimages/48.PNG')
+              
+          }
+           else if(form.pswd.value=="049"){
+               window.open('ttimages/49.PNG')
+              
+          }
+           else if(form.pswd.value=="050"){
+               window.open('ttimages/50.PNG')
+              
+          }
+         
+           else if(form.pswd.value=="053"){
+               window.open('ttimages/53.PNG')
+              
+          }
+           else if(form.pswd.value=="054"){
+               window.open('ttimages/54.PNG')
+              
+          }
+           else if(form.pswd.value=="055"){
+               window.open('ttimages/55.PNG')
+              
+          }
+          else if(form.pswd.value=="056"){
+               window.open('ttimages/56.PNG')
+              
+          }
+          else if(form.pswd.value=="057"){
+               window.open('ttimages/57.PNG')
+              
+          }
+          else if(form.pswd.value=="058"){
+               window.open('ttimages/58.PNG')
+              
+          }
+          else if(form.pswd.value=="059"){
+               window.open('ttimages/59.PNG')
+              
+          }
+          else if(form.pswd.value=="060"){
+               window.open('ttimages/60.PNG')
+              
+          }
+          
+           else if(form.pswd.value=="062"){
+               window.open('ttimages/62.PNG')
+              
+          }
+           
+           
+           else if(form.pswd.value=="066"){
+               window.open('ttimages/66.PNG')
+              
+          }
+           else if(form.pswd.value=="067"){
+               window.open('ttimages/67.PNG')
+              
+          }
+           
+           else if(form.pswd.value=="070"){
+               window.open('ttimages/70.PNG')
+          }
+           else if(form.pswd.value=="071"){
+               window.open('ttimages/71.PNG')
+           }
+           else if(form.pswd.value=="072"){
+               window.open('ttimages/72.PNG')
+           }
+           else if(form.pswd.value=="073"){
+               window.open('ttimages/73.PNG')
+           }
+           
+           else if(form.pswd.value=="075"){
+               window.open('ttimages/75.PNG')
+           }
+           else if(form.pswd.value=="076"){
+               window.open('ttimages/76.PNG')
+           }
+           
+           else if(form.pswd.value=="080"){
+               window.open('ttimages/80.PNG')
+           }
+           else if(form.pswd.value=="081"){
+               window.open('ttimages/81.PNG')
+           }
+           else if(form.pswd.value=="082"){
+               window.open('ttimages/82.PNG')
+           }
+           else if(form.pswd.value=="083"){
+               window.open('ttimages/83.PNG')
+           }
+           else if(form.pswd.value=="084"){
+               window.open('ttimages/84.PNG')
+           }
+            else if(form.pswd.value=="085"){
+               window.open('ttimages/85.PNG')
+           }
+           else if(form.pswd.value=="086"){
+               window.open('ttimages/86.PNG')
+           }
+           else if(form.pswd.value=="087"){
+               window.open('ttimages/87.PNG')
+           }
+           else if(form.pswd.value=="088"){
+               window.open('ttimages/88.PNG')
+           }
+           else if(form.pswd.value=="089"){
+               window.open('ttimages/89.PNG')
+           }
+           else if(form.pswd.value=="090"){
+               window.open('ttimages/90.PNG')
+           }
+           else if(form.pswd.value=="091"){
+               window.open('ttimages/91.PNG')
+           }
+           else if(form.pswd.value=="092"){
+               window.open('ttimages/92.PNG')
+           }
+           else if(form.pswd.value=="093"){
+               window.open('ttimages/93.PNG')
+           }
+           else if(form.pswd.value=="094"){
+               window.open('ttimages/94.PNG')
+           }
+           else if(form.pswd.value=="095"){
+               window.open('ttimages/95.PNG')
+           }
+           else if(form.pswd.value=="096"){
+               window.open('ttimages/96.PNG')
+           }
+           else if(form.pswd.value=="097"){
+               window.open('ttimages/97.PNG')
+           }
+           else if(form.pswd.value=="098"){
+               window.open('ttimages/98.PNG')
+           }
+           else if(form.pswd.value=="099"){
+               window.open('ttimages/99.PNG')
+           }
+           else if(form.pswd.value=="100"){
+               window.open('ttimages/100.PNG')
+           }
+           else if(form.pswd.value=="101"){
+               window.open('ttimages/101.PNG')
+           }
+           else if(form.pswd.value=="102"){
+               window.open('ttimages/102.PNG')
+           }
+           else if(form.pswd.value=="103"){
+               window.open('ttimages/103.PNG')
+           }
+           else if(form.pswd.value=="104"){
+               window.open('ttimages/104.PNG')
+           }
+           else if(form.pswd.value=="105"){
+               window.open('ttimages/105.PNG')
+           }
+          
+           else if(form.pswd.value=="109"){
+               window.open('ttimages/109.PNG')
+           }
+           else if(form.pswd.value=="110"){
+               window.open('ttimages/110.PNG')
+           }
+           else if(form.pswd.value=="111"){
+               window.open('ttimages/111.PNG')
+           }
+           else if(form.pswd.value=="112"){
+               window.open('ttimages/112.PNG')
+           }
+           else if(form.pswd.value=="113"){
+               window.open('ttimages/113.PNG')
+           }
+           else if(form.pswd.value=="114"){
+               window.open('ttimages/114.PNG')
+           }
+           
+           
+           else if(form.pswd.value=="118"){
+               window.open('ttimages/118.PNG')
+           }
+           else if(form.pswd.value=="119"){
+               window.open('ttimages/119.PNG')
+           }
+           else if(form.pswd.value=="120"){
+               window.open('ttimages/120.PNG')
+           }
+           else if(form.pswd.value=="121"){
+               window.open('ttimages/121.PNG')
+           }
+           else if(form.pswd.value=="122"){
+               window.open('ttimages/122.PNG')
+           }
+           else if(form.pswd.value=="123"){
+               window.open('ttimages/123.PNG')
+           }
+            else if(form.pswd.value=="124"){
+               window.open('ttimages/124.PNG')
+           }
+            else if(form.pswd.value=="125"){
+               window.open('ttimages/125.PNG')
+           }
+            else if(form.pswd.value=="126"){
+               window.open('ttimages/126.PNG')
+           }
+           else if(form.pswd.value=="127"){
+               window.open('ttimages/127.PNG')
+           }
+           else if(form.pswd.value=="128"){
+               window.open('ttimages/128.PNG')
+           }
+           else if(form.pswd.value=="130"){
+               window.open('ttimages/130.PNG')
+           }
+           else if(form.pswd.value=="131"){
+               window.open('ttimages/131.PNG')
+           }
+            else if(form.pswd.value=="132"){
+               window.open('ttimages/132.PNG')
+           }
+            else if(form.pswd.value=="133"){
+               window.open('ttimages/133.PNG')
+           }
+           else if(form.pswd.value=="134"){
+               window.open('ttimages/134.PNG')
+           }
+           else if(form.pswd.value=="135"){
+               window.open('ttimages/135.PNG')
+           }
+           else if(form.pswd.value=="136"){
+               window.open('ttimages/136.PNG')
+           }
+           else if(form.pswd.value=="137"){
+               window.open('ttimages/137.PNG')
+           }
+           else if(form.pswd.value=="139"){
+               window.open('ttimages/139.PNG')
+           }
+           else if(form.pswd.value=="140"){
+               window.open('ttimages/140.PNG')
+           }
+           else if(form.pswd.value=="141"){
+               window.open('ttimages/141.PNG')
+           }
+           else if(form.pswd.value=="142"){
+               window.open('ttimages/142.PNG')
+           }
+           else if(form.pswd.value=="143"){
+               window.open('ttimages/143.PNG')
+           }
+           else if(form.pswd.value=="144"){
+               window.open('ttimages/144.PNG')
+           }
+           else if(form.pswd.value=="145"){
+               window.open('ttimages/145.PNG')
+           }
+           else if(form.pswd.value=="146"){
+               window.open('ttimages/146.PNG')
+           }
+           else if(form.pswd.value=="147"){
+               window.open('ttimages/147.PNG')
+           }
+           else if(form.pswd.value=="148"){
+               window.open('ttimages/148.PNG')
+           }
+           else if(form.pswd.value=="150"){
+               window.open('ttimages/150.PNG')
+           }
+           else if(form.pswd.value=="151"){
+               window.open('ttimages/151.PNG')
+           }
+           else if(form.pswd.value=="152"){
+               window.open('ttimages/152.PNG')
+           }
+           else if(form.pswd.value=="153"){
+               window.open('ttimages/153.PNG')
+           }
+           else if(form.pswd.value=="162"){
+               window.open('ttimages/162.PNG')
+           }
+           else if(form.pswd.value=="221"){
+               window.open('ttimages/221.PNG')
+           }
+           else if(form.pswd.value=="313"){
+               window.open('ttimages/313.PNG')
+           }
+           else if(form.pswd.value=="315"){
+               window.open('ttimages/315.PNG')
+           }
+            else if(form.pswd.value=="132"){
+               window.open('ttimages/132.PNG')
+           }
+           else if(form.pswd.value=="326"){
+               window.open('ttimages/326.PNG')
+          }
+           else {
+              alert("Error Password. Try Again or Contact ICT Unit.")
+          }
+          }
+  </script>
+  </div>
+  </div>
+</body>
+</html>
+
+
