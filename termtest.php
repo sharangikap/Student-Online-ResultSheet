@@ -3,7 +3,7 @@
  $id = $_POST['password'];
  if(!empty($id)){
      
- $db = mysqli_connect('localhost','lumbinis_sharangika','GRSPerera@86','lumbinis_studentlumbini')
+ $db = mysqli_connect('localhost','','','')
  or die('Error connecting to MySQL server.');
 
 $sql = "SELECT * FROM termmarks2020 WHERE ID=$id";
